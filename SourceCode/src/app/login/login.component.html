@@ -1,0 +1,48 @@
+<header></header>
+<div class="container content" style="margin-top:12%;">
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+                <div class="panel panel-primary">
+                    <!--<div class="panel-heading">
+        <h3 class="panel-title">Create Employee</h3>
+    </div>-->
+                    <div class="panel-body">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Login</h3>
+                            </div>
+                        </div>
+                        <div class="form-group" class="mtop10">
+                            <label for="userName">User Name</label>
+                            <input id="user_name" name="userName" type="text" [(ngModel)]="user_name" class="form-control">
+                           
+                        </div>
+                        <div class="form-group" class="mtop10">
+                            <label for="email">Password</label> 
+                            <input id="user_password" name="UserPassword" type="password" [(ngModel)]="user_password"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+
+    </div>
+
+
+</div>
+<footer></footer>
+<!--<p>
+  login works!
+</p>-->

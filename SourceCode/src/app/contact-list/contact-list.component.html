@@ -1,0 +1,27 @@
+
+<div *ngIf ="dataAvailable; else noResponseData">
+  <div id="dataContent" class = "table-responsive">
+  <table class="table-striped" style="width:100%;">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Website</th>
+      </tr>
+      <tr *ngFor="let contact of contacts">
+        <td>{{contact.id}}</td>
+        <td>{{contact.name}}</td>
+        <td>{{contact.username}}</td>
+        <td>{{contact.email}}</td>
+        <td>{{contact.website}}</td>
+      </tr>
+    </table>  
+  </div>
+</div>
+<ng-template #noResponseData>
+  <p>
+    contact-list works!
+  </p> 
+</ng-template>
+
